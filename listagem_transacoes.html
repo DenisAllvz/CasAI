@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CasAI - Extrato de Transações</title>
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/listagem.css"> </head>
+<body>
+    
+    <header class="cabecalho">
+        <h1 class="logo"><a href="dashboard.html" class="link-logo">CasAI</a></h1>
+        <nav class="navegacao-principal">
+            <ul>
+                <li><a href="dashboard.html" class="btn btn-login">Dashboard</a></li>
+                <li><a href="listagem_transacoes.html" class="btn btn-cadastro" style="border-color: var(--cor-destaque-secundario);">Extrato</a></li>
+                <li><a href="index.html" class="btn btn-login">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="listagem-main">
+        <section class="card extrato-container">
+            <div class="extrato-header">
+                <h2>Extrato Consolidado do Casal</h2>
+                <a href="detalhe_transacao.html" class="btn btn-cta"> + Nova Transação</a>
+            </div>
+            
+            <div class="filtros-mes">
+                <label for="mes-filtro">Filtrar Mês:</label>
+                <select id="mes-filtro" class="select-filtro">
+                    <option value="outubro">Outubro / 2025</option>
+                    <option value="setembro">Setembro / 2025</option>
+                    </select>
+                <label for="parceiro-filtro">Parceiro:</label>
+                <select id="parceiro-filtro" class="select-filtro">
+                    <option value="todos">Todos</option>
+                    <option value="joao">João</option>
+                    <option value="maria">Maria</option>
+                </select>
+            </div>
+            
+            <table class="tabela-extrato">
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Descrição</th>
+                        <th>Categoria</th>
+                        <th>Responsável</th>
+                        <th>Valor</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="tipo-despesa">
+                        <td>12/10</td>
+                        <td>Aluguel - Fixo</td>
+                        <td>Moradia</td>
+                        <td>João</td>
+                        <td class="valor-despesa">R$ 1.500,00</td>
+                        <td><a href="detalhe_transacao.html">Editar</a></td>
+                    </tr>
+                    <tr class="tipo-receita">
+                        <td>10/10</td>
+                        <td>Salário Parceiro 1</td>
+                        <td>Receita</td>
+                        <td>João</td>
+                        <td class="valor-receita">R$ 4.500,00</td>
+                        <td><a href="detalhe_transacao.html">Ver</a></td>
+                    </tr>
+                    <tr class="tipo-despesa compartilhado">
+                        <td>08/10</td>
+                        <td>Jantar de Aniversário</td>
+                        <td>Lazer</td>
+                        <td>Maria (Divisão IA)</td>
+                        <td class="valor-despesa">R$ 300,00</td>
+                        <td><a href="detalhe_transacao.html">Detalhes</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="extrato-footer">
+                <p>Total de Itens: 25 | Saldo Final do Período: R$ 4.800,00</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="rodape">
+        <p>&copy; 2025 CasAI. Todos os direitos reservados.</p>
+        <div class="links-secundarios">
+            <a href="#" class="link-footer">Termos de Uso</a>
+            <span class="separador">|</span>
+            <a href="#" class="link-footer">Política de Privacidade</a>
+        </div>
+    </footer>
+</body>
+</html>

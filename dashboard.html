@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CasAI - Dashboard Principal do Casal</title>
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/dashboard.css"> </head>
+<body>
+    
+    <header class="cabecalho">
+        <h1 class="logo"><a href="dashboard.html" class="link-logo">CasAI</a></h1>
+        <nav class="navegacao-principal">
+            <ul>
+                <li><a href="dashboard.html" class="btn btn-login" style="border-color: var(--cor-destaque-primario);">Dashboard</a></li>
+                <li><a href="listagem_transacoes.html" class="btn btn-cadastro">Extrato</a></li>
+                <li><a href="index.html" class="btn btn-login">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="dashboard-main">
+        <div class="dashboard-header">
+            <h2>Painel Financeiro do Casal: [Nome 1] & [Nome 2]</h2>
+            <a href="detalhe_transacao.html" class="btn btn-cta"> + Nova Transação</a>
+        </div>
+        
+        <section class="cards-financeiros">
+            <article class="card-info card-saldo">
+                <h3>Saldo Total (Conta Casal)</h3>
+                <p class="valor">R$ 4.800,00</p>
+            </article>
+            <article class="card-info card-receita">
+                <h3>Receitas do Mês</h3>
+                <p class="valor">R$ 9.500,00</p>
+            </article>
+            <article class="card-info card-despesa">
+                <h3>Despesas do Mês</h3>
+                <p class="valor">R$ 4.700,00</p>
+            </article>
+            <article class="card-info card-limite">
+                <h3>Limite de Gastos</h3>
+                <p class="valor alerta-limite">R$ 5.600,00 (83% usado)</p>
+            </article>
+        </section>
+
+        <section class="card secao-dashboard">
+            <h3>Análise de Desempenho</h3>
+            <div class="grafico-placeholder">
+                [Área reservada para o Gráfico de Despesas por Categoria e Fluxo de Caixa]
+            </div>
+        </section>
+        
+        <section class="card secao-dashboard">
+            <h3>Metas Compartilhadas</h3>
+            <div class="metas-lista">
+                <div class="insight-item">
+                    <p>Viagem para o Caribe: R$ 5.000 / R$ 15.000 (33% Completo)</p>
+                </div>
+                <div class="insight-item">
+                    <p>Reserva de Emergência: R$ 8.000 / R$ 10.000 (80% Completo)</p>
+                </div>
+                <a href="#" style="margin-top: 15px; display: block;">+ Gerenciar Metas</a>
+            </div>
+        </section>
+
+        <section class="card secao-dashboard insights-ia">
+            <h3>✨ Dicas e Insights da Inteligência Artificial</h3>
+            <div class="insights-lista">
+                <div class="insight-item">
+                    <p>A IA notou: Os gastos com 'Alimentação Fora' do(a) Parceiro(a) 2 aumentaram 20% esta semana. Avalie a necessidade.</p>
+                </div>
+                <div class="insight-item">
+                    <p>Recomendação: Sugerimos aumentar a contribuição para 'Reserva de Emergência' em R$ 100/mês para bater a meta mais cedo.</p>
+                </div>
+                <div class="insight-item">
+                    <p>Alerta: O uso do limite de gastos está acima de 80% do sugerido. Planeje a próxima semana com cautela.</p>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    
+    <footer class="rodape">
+        <p>&copy; 2025 CasAI. Todos os direitos reservados.</p>
+        <div class="links-secundarios">
+            <a href="#" class="link-footer">Termos de Uso</a>
+            <span class="separador">|</span>
+            <a href="#" class="link-footer">Política de Privacidade</a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,4 +1,6 @@
-/* Definição das Variáveis de Cores (Paleta Moderna e Dinâmica) */
+/* style.css - Estilos Globais do CasAI */
+
+/* 1. VARIÁVEIS DE CORES E FONTES (Paleta Moderna e Dinâmica) */
 :root {
     --cor-fundo-principal: #1A1A2E; /* Azul Meia-Noite Escuro */
     --cor-fundo-secundario: #2C2C45; /* Azul-Escuro Sutil para cards */
@@ -10,7 +12,7 @@
     --fonte-principal: 'Arial', sans-serif; 
 }
 
-/* 1. Estilos Gerais e Reset */
+/* 2. RESET E ESTILOS BÁSICOS */
 * {
     margin: 0;
     padding: 0;
@@ -34,7 +36,9 @@ a:hover {
     color: var(--cor-destaque-secundario);
 }
 
-/* 2. Componentes de Navegação (Header) */
+/* 3. LAYOUT GERAL (Header, Footer, Botões Comuns) */
+
+/* Cabeçalho */
 .cabecalho {
     display: flex;
     justify-content: space-between;
@@ -44,13 +48,10 @@ a:hover {
     border-bottom: 2px solid var(--cor-fundo-principal);
 }
 
-.logo {
-    font-size: 1.8em;
-    font-weight: bold;
-}
-
 .link-logo {
     color: var(--cor-destaque-primario);
+    font-size: 1.8em;
+    font-weight: bold;
 }
 
 .navegacao-principal ul {
@@ -62,7 +63,17 @@ a:hover {
     margin-left: 15px;
 }
 
-/* 3. Estilo dos Botões */
+/* Rodapé */
+.rodape {
+    background-color: var(--cor-fundo-secundario);
+    text-align: center;
+    padding: 20px 5%;
+    border-top: 1px solid #3A3A5E;
+    color: var(--cor-texto-secundario);
+    font-size: 0.9em;
+}
+
+/* Botões */
 .btn {
     padding: 10px 20px;
     border-radius: 5px;
@@ -79,14 +90,13 @@ a:hover {
     background-color: var(--cor-destaque-primario);
     color: var(--cor-fundo-principal); 
     padding: 15px 30px;
-    font-size: 1.1em;
 }
 
 .btn-cta:hover {
-    background-color: #008C9E; /* Ciano um pouco mais escuro */
+    background-color: #008C9E;
 }
 
-/* Botões Login/Cadastro - Sem fundo ou com fundo sutil */
+/* Botões Secundários */
 .btn-login, .btn-cadastro {
     background: none;
     color: var(--cor-texto-principal);
@@ -99,91 +109,10 @@ a:hover {
     color: white;
 }
 
-/* 4. Estilos da Landing Page (index.html) */
-.landing-main {
-    padding: 60px 5%;
-    text-align: center;
-}
-
-/* Hero Section (Destaque Principal) */
-.hero-section {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 40px;
-    padding: 40px 0;
-    margin-bottom: 60px;
-    max-width: 1200px;
-    margin: 0 auto 60px auto;
-}
-
-.hero-conteudo {
-    max-width: 500px;
-    text-align: left;
-}
-
-.titulo-principal {
-    font-size: 3em;
-    margin-bottom: 10px;
-    color: white;
-}
-
-.subtitulo {
-    font-size: 1.4em;
-    color: var(--cor-texto-secundario);
-    margin-bottom: 30px;
-}
-
-.imagem-responsiva {
-    max-width: 100%;
-    height: auto;
-    /* Ajuste para ter um visual mais 'tech' no SVG, se aplicável */
-}
-
-/* Seção de Vantagens */
-.titulo-secao {
-    font-size: 2em;
-    margin-bottom: 30px;
-    color: var(--cor-destaque-primario);
-}
-
-.cards-vantagens {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 30px;
-}
-
+/* Cards de Conteúdo (Geral) */
 .card {
     background-color: var(--cor-fundo-secundario);
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    text-align: left;
-    border-top: 4px solid var(--cor-destaque-secundario); /* Borda de destaque */
-}
-
-.card h4 {
-    color: white;
-    margin-bottom: 10px;
-}
-
-/* 5. Estilos do Rodapé */
-.rodape {
-    background-color: var(--cor-fundo-secundario);
-    text-align: center;
-    padding: 20px 5%;
-    border-top: 1px solid #3A3A5E;
-    color: var(--cor-texto-secundario);
-    font-size: 0.9em;
-}
-
-.links-secundarios a {
-    color: var(--cor-texto-secundario);
-    margin: 0 5px;
-}
-
-.links-secundarios a:hover {
-    color: var(--cor-destaque-primario);
 }

@@ -1,0 +1,68 @@
+/* cadastro.css - Estilos Específicos para a Página de Cadastro */
+
+.cadastro-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.formulario-card {
+    /* Reutiliza a classe 'card' do style.css */
+    max-width: 700px; 
+    width: 100%;
+    text-align: center;
+    border-top: 5px solid var(--cor-destaque-secundario); /* Destaque Roxo */
+}
+
+.formulario-card h2 {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+.campo-grupo {
+    display: flex;
+    gap: 30px; 
+    margin-top: 30px;
+}
+
+.parceiro-bloco {
+    flex: 1; 
+    text-align: left;
+    padding: 15px;
+    border: 1px solid #3A3A5E; 
+    border-radius: 6px;
+}
+
+.parceiro-bloco h3 {
+    color: var(--cor-destaque-primario);
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+.formulario-card label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    color: var(--cor-texto-principal);
+    font-weight: bold;
+}
+
+.formulario-card input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    border-radius: 6px;
+    background-color: #333;
+    color: var(--cor-texto-principal);
+    font-size: 1em;
+}
+
+.btn-cadastro-submit {
+    width: 100%;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 1.2em;
+}

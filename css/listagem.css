@@ -1,0 +1,100 @@
+/* listagem.css - Estilos Específicos para a Página de Extrato */
+
+.listagem-main {
+    padding: 40px 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.extrato-container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 30px;
+    border-top: 5px solid var(--cor-destaque-primario);
+}
+
+.extrato-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.extrato-header h2 {
+    font-size: 1.8em;
+}
+
+/* Estilos para Filtros */
+.filtros-mes {
+    margin-bottom: 25px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    color: var(--cor-texto-secundario);
+}
+
+.select-filtro {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: var(--cor-texto-principal);
+}
+
+/* Estilos da Tabela (RF02) */
+.tabela-extrato {
+    width: 100%;
+    border-collapse: collapse; /* Remove espaços entre as bordas das células */
+    margin-top: 20px;
+}
+
+.tabela-extrato thead th {
+    background-color: #3A3A5E; /* Cor de fundo para o cabeçalho */
+    color: white;
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid var(--cor-destaque-primario);
+}
+
+.tabela-extrato tbody tr {
+    border-bottom: 1px solid #3A3A5E;
+    transition: background-color 0.3s;
+}
+
+.tabela-extrato tbody tr:hover {
+    background-color: #3A3A5E80; /* Sombra ao passar o mouse */
+    cursor: pointer;
+}
+
+.tabela-extrato tbody td {
+    padding: 12px;
+    color: var(--cor-texto-principal);
+}
+
+/* Destaque por Tipo de Transação */
+.tipo-receita {
+    color: #4CAF50; /* Verde para receita */
+}
+
+.valor-receita {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.tipo-despesa {
+    color: var(--cor-texto-principal);
+}
+
+.valor-despesa {
+    font-weight: bold;
+    color: var(--cor-alerta-gasto); /* Vermelho para despesa */
+}
+
+.extrato-footer {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #3A3A5E;
+    text-align: right;
+    font-weight: bold;
+    color: var(--cor-destaque-primario);
+}

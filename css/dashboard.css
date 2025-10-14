@@ -1,0 +1,114 @@
+/* dashboard.css - Estilos Específicos para o Dashboard */
+
+.dashboard-main {
+    padding: 40px 5%;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--cor-fundo-secundario);
+    padding-bottom: 15px;
+}
+
+.dashboard-header h2 {
+    font-size: 2em;
+    color: white;
+}
+
+/* 1. Layout dos Cards de Finanças (Visão Geral) */
+.cards-financeiros {
+    display: grid;
+    /* Faz com que os cards se adaptem, com um mínimo de 280px */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.card-info {
+    /* Reutiliza o estilo de card geral do style.css */
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    border-left: 5px solid var(--cor-fundo-principal); /* Borda inicial neutra */
+}
+
+.card-info h3 {
+    font-size: 1em;
+    color: var(--cor-texto-secundario);
+    margin-bottom: 10px;
+}
+
+.card-info p.valor {
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+/* Cores de Destaque */
+.card-saldo {
+    border-left-color: white;
+}
+.card-receita {
+    border-left-color: #4CAF50; /* Verde */
+}
+.card-receita p.valor {
+    color: #4CAF50;
+}
+.card-despesa {
+    border-left-color: var(--cor-alerta-gasto); /* Vermelho */
+}
+.card-despesa p.valor {
+    color: var(--cor-alerta-gasto);
+}
+.card-limite {
+    border-left-color: var(--cor-destaque-primario); /* Ciano */
+}
+.alerta-limite {
+    color: var(--cor-alerta-gasto); /* Mantém o alerta em vermelho */
+}
+
+/* 2. Estilo para Seções de Conteúdo (Gráficos, Metas) */
+.secao-dashboard {
+    /* Reutiliza a classe 'card' do style.css */
+    margin-bottom: 30px;
+}
+
+.secao-dashboard h3 {
+    color: white;
+    border-bottom: 1px solid #3A3A5E;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.grafico-placeholder {
+    min-height: 250px;
+    background-color: #33334F;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-texto-secundario);
+    font-style: italic;
+    padding: 20px;
+}
+
+/* 3. Estilo para a seção de IA (Diferencial) */
+.insights-ia {
+    border: 2px solid var(--cor-destaque-secundario); /* Borda Roxo/Magenta */
+    background-color: #24243A; /* Fundo ligeiramente mais escuro para contraste */
+}
+
+.insights-ia h3 {
+    color: var(--cor-destaque-secundario);
+}
+
+.insight-item {
+    padding: 15px 0;
+    border-bottom: 1px dashed #3A3A5E;
+    color: var(--cor-texto-principal);
+}
+
+.insight-item:last-child {
+    border-bottom: none;
+}
