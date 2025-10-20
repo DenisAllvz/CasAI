@@ -112,3 +112,33 @@
 .insight-item:last-child {
     border-bottom: none;
 }
+/* Adicione no final de dashboard.css */
+@media screen and (max-width: 600px) {
+    
+    .dashboard-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .dashboard-header h2 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    .btn-cta {
+        width: 100%; /* Botão "Nova Transação" fica full width */
+        text-align: center;
+        padding: 10px;
+        margin-top: 5px;
+    }
+
+    /* Cards de Finanças: Deixar em uma única coluna */
+    .cards-financeiros {
+        grid-template-columns: 1fr; /* Força uma única coluna */
+    }
+
+    /* Seção de Gráficos e Metas */
+    .secao-dashboard {
+        padding: 20px;
+    }
+}

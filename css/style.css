@@ -116,3 +116,74 @@ a:hover {
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
+
+
+/* ========================================================== */
+/* RESPONSIVIDADE GERAL (< 600px)               */
+/* ========================================================== */
+
+@media screen and (max-width: 600px) {
+    
+    /* 1. CABEÇALHO E NAVEGAÇÃO */
+    .cabecalho {
+        flex-direction: column; /* Empilha logo e navegação */
+        align-items: flex-start;
+        padding: 15px 5%;
+    }
+
+    .navegacao-principal {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .navegacao-principal ul {
+        flex-direction: column; /* Empilha os links */
+        width: 100%;
+    }
+
+    .navegacao-principal li {
+        margin-left: 0;
+        margin-bottom: 5px;
+        width: 100%;
+    }
+
+    .navegacao-principal li a {
+        display: block; /* Ocupa a largura total */
+        text-align: center;
+    }
+
+    /* 2. LANDING PAGE (index.html) */
+    .hero-section {
+        flex-direction: column-reverse; /* Coloca a imagem no topo */
+        text-align: center;
+        gap: 30px;
+    }
+
+    .hero-conteudo {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .titulo-principal {
+        font-size: 2.2em;
+    }
+
+    .subtitulo {
+        font-size: 1.1em;
+    }
+
+    .cards-vantagens {
+        flex-direction: column; /* Empilha os cards de vantagens */
+        gap: 20px;
+    }
+
+    .card {
+        max-width: 100%;
+        text-align: left;
+    }
+
+    /* 3. RODAPÉ */
+    .rodape {
+        font-size: 0.8em;
+    }
+}

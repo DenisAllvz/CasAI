@@ -66,3 +66,18 @@
     margin-top: 30px;
     font-size: 1.2em;
 }
+/* Adicione no final de login.css e cadastro.css */
+@media screen and (max-width: 600px) {
+    
+    /* Login e Cadastro - Ocupar a Largura Total */
+    .formulario-card {
+        max-width: 95%; /* Garante que o card ocupe bem a tela */
+        padding: 30px 20px;
+    }
+    
+    /* Cadastro Específico: Garante que os blocos de parceiros não fiquem lado a lado */
+    .campo-grupo {
+        flex-direction: column; /* Empilha os blocos de Parceiro 1 e Parceiro 2 */
+        gap: 20px;
+    }
+}
