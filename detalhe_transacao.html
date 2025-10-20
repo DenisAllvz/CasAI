@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CasAI - Registrar Transação</title>
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/transacao.css"> </head>
+<body>
+    
+    <header class="cabecalho">
+        <h1 class="logo"><a href="dashboard.html" class="link-logo">CasAI</a></h1>
+        <nav class="navegacao-principal">
+            <ul>
+                <li><a href="dashboard.html" class="btn btn-login">Dashboard</a></li>
+                <li><a href="listagem_transacoes.html" class="btn btn-cadastro">Extrato</a></li>
+                <li><a href="index.html" class="btn btn-login">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="transacao-main">
+        <section class="card formulario-card">
+            <h2>Registrar Nova Despesa ou Receita</h2>
+            
+            <form action="dashboard.html" method="post">
+                
+                <div class="campo-grupo-duplo">
+                    <div class="campo">
+                        <label for="tipo">Tipo de Transação:</label>
+                        <select id="tipo" name="tipo" required>
+                            <option value="despesa">Despesa</option>
+                            <option value="receita" style="color: #4CAF50;">Receita</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label for="valor">Valor:</label>
+                        <input type="number" id="valor" name="valor" placeholder="R$ 0,00" required step="0.01">
+                    </div>
+                </div>
+
+                <div class="campo">
+                    <label for="descricao">Descrição (Obrigatório):</label>
+                    <input type="text" id="descricao" name="descricao" placeholder="Ex: Mercado da semana" required>
+                </div>
+                
+                <div class="campo-grupo-duplo">
+                    <div class="campo">
+                        <label for="categoria">Categoria:</label>
+                        <select id="categoria" name="categoria" required>
+                            <option value="alimentacao">Alimentação</option>
+                            <option value="moradia">Moradia</option>
+                            <option value="lazer">Lazer</option>
+                            <option value="outros">Outros</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label for="responsavel">Parceiro Responsável:</label>
+                        <select id="responsavel" name="responsavel" required>
+                            <option value="joao">João</option>
+                            <option value="maria">Maria</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="campo-checkbox">
+                    <input type="checkbox" id="fixo" name="fixo">
+                    <label for="fixo">Marcar como Gasto Fixo Recorrente (Ex: Aluguel)</label>
+                </div>
+                
+                <hr class="divisor-ia">
+                
+                <div class="acoes-transacao">
+                    <button type="submit" class="btn btn-cta btn-salvar">Salvar Transação</button>
+                    
+                    <button type="button" class="btn btn-ia">Sugerir Divisão IA (Compartilhar)</button>
+                </div>
+                
+                <div id="resultado-ia" class="card resultado-ia" style="display:none; margin-top: 20px;">
+                    <p style="color: var(--cor-destaque-secundario);">A IA sugere a divisão de R$ 500,00 da seguinte forma:</p>
+                    <p>João: R$ 250,00 (50%) | Maria: R$ 250,00 (50%)</p>
+                    <button type="button" class="btn btn-confirmar-ia">Confirmar Divisão</button>
+                </div>
+                
+            </form>
+        </section>
+    </main>
+    
+    <footer class="rodape">
+        <p>&copy; 2025 CasAI. Todos os direitos reservados.</p>
+        <div class="links-secundarios">
+            <a href="#" class="link-footer">Termos de Uso</a>
+            <span class="separador">|</span>
+            <a href="#" class="link-footer">Política de Privacidade</a>
+        </div>
+    </footer>
+</body>
+</html>
