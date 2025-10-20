@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CasAI - Crie sua Conta de Casal</title>
+    <title>CasAI - Crie sua Conta</title>
     <link rel="stylesheet" href="css/style.css"> 
-    <link rel="stylesheet" href="css/cadastro.css"> </head>
+    <link rel="stylesheet" href="css/cadastro.css"> 
+    
+    </head>
 <body>
     
     <header class="cabecalho">
@@ -19,39 +21,24 @@
     </header>
     
     <main class="cadastro-main">
-        <section class="card formulario-card">
-            <h2>Crie sua Conta de Casal CasAI</h2>
-            <p style="color: var(--cor-texto-secundario);">Preencha os dados dos dois parceiros para criar a conta compartilhada.</p>
+        <section class="card formulario-card" style="max-width: 420px;"> 
+            <h2>Crie sua Conta CasAI</h2>
+            <p style="color: var(--cor-texto-secundario); margin-bottom: 25px;">O primeiro passo para a transparência financeira.</p>
             
             <form action="dashboard.html" method="get">
                 
-                <div class="campo-grupo">
-                    <div class="parceiro-bloco">
-                        <h3>Parceiro(a) 1</h3>
-                        <label for="nome1">Nome:</label>
-                        <input type="text" id="nome1" name="nome1" required>
+                <div class="bloco-individual">
+                    <label for="nome">Seu Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
 
-                        <label for="email1">E-mail (Único):</label>
-                        <input type="email" id="email1" name="email1" required>
+                    <label for="email">Seu E-mail:</label>
+                    <input type="email" id="email" name="email" required>
 
-                        <label for="senha1">Senha (Mín. 8 caracteres):</label>
-                        <input type="password" id="senha1" name="senha1" required minlength="8">
-                    </div>
-
-                    <div class="parceiro-bloco">
-                        <h3>Parceiro(a) 2</h3>
-                        <label for="nome2">Nome:</label>
-                        <input type="text" id="nome2" name="nome2" required>
-
-                        <label for="email2">E-mail (Único):</label>
-                        <input type="email" id="email2" name="email2" required>
-
-                        <label for="senha2">Senha (Mín. 8 caracteres):</label>
-                        <input type="password" id="senha2" name="senha2" required minlength="8">
-                    </div>
+                    <label for="senha">Sua Senha (Mín. 8 caracteres):</label>
+                    <input type="password" id="senha" name="senha" required minlength="8">
                 </div>
 
-                <button type="submit" class="btn btn-cta btn-cadastro-submit">Concluir Cadastro e Entrar no CasAI</button>
+                <button type="submit" class="btn btn-cta btn-cadastro-submit" style="margin-top: 20px;">Cadastrar e Entrar</button>
             </form>
 
             <div class="link-login" style="margin-top: 25px;">
